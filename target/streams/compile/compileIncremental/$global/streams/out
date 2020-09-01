@@ -1,0 +1,56 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(C:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(C:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(C:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(C:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Java source to C:\Users\janes bond\IdeaProjects\spark-java\target\scala-2.10\classes...[0m
+[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@21b3eb71 directly...[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:1: package org.apache.spark does not exist[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.SparkConf;[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:2: package org.apache.spark.api.java does not exist[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.api.java.JavaPairRDD;[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:3: package org.apache.spark.api.java does not exist[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.api.java.JavaRDD;[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:4: package org.apache.spark.api.java does not exist[0m
+[0m[[31merror[0m] [0mimport org.apache.spark.api.java.JavaSparkContext;[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:11: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class SparkConf[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        SparkConf SparkConf = new SparkConf().setMaster("local").setAppName("Java WordCount");[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:11: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class SparkConf[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        SparkConf SparkConf = new SparkConf().setMaster("local").setAppName("Java WordCount");[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:12: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class JavaSparkContext[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        JavaSparkContext sparkContext = new JavaSparkContext(SparkConf);[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:12: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class JavaSparkContext[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        JavaSparkContext sparkContext = new JavaSparkContext(SparkConf);[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:14: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class JavaRDD[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m       JavaRDD<String> input = sparkContext.textFile(args[0]);[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:15: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class JavaRDD[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        JavaRDD<String> fmap = input.flatMap(content -> Arrays.asList(content.split(" ")).iterator());[0m
+[0m[[31merror[0m] [0mC:\Users\janes bond\IdeaProjects\spark-java\src\main\java\WordC.java:16: cannot find symbol[0m
+[0m[[31merror[0m] [0m  symbol:   class JavaPairRDD[0m
+[0m[[31merror[0m] [0m  location: class WordC[0m
+[0m[[31merror[0m] [0m        JavaPairRDD ma = fmap.mapToPair(m -> new Tuple2(m,1))[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) javac returned nonzero exit code[0m
